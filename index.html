@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <title>Cafeteria a tu gusto</title>
+</head>
+<body>
+    <!----------------| Header |--------------->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">A tu gusto.</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <span>Acerca de</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#menu" class="nav__link">
+                            <span>Menú</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#gallery" class="nav__link">
+                            <span>Galería</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Toggle Close -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!----------------| Main |--------------->
+    <main class="main">
+        <!-- Home -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">Cafetería a tu Gusto</h1>
+
+                    <p class="home__text">
+                        La vida es como una taza de café tú eliges si lo quieres dulce o amargo, frio o caliente, solo o acompañado.
+                    </p>
+
+                    <div class="home__buttons">
+                        <a href="#menu" class="button">Menú</a>
+                        <a href="#gallery" class="button--transparent">Galería</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__img">
+                    <img src="assets/img/acerca-de.jpg" alt="">
+                </div>
+
+                <div class="about__data">
+                    <h2 class="about__subtitle section__title">Acerca de</h2>
+                    <p>
+                        "Bienvenidos a nuestra cafetería, un lugar donde el sabor y la comodidad se unen para brindarte una experiencia única. Desde el aroma a café recién hecho hasta la amabilidad de nuestro personal, cada detalle está diseñado para hacerte sentir como en casa.
+                        Ofrecemos una amplia selección de bebidas y bocadillos para satisfacer a todos los gustos, y un ambiente acogedor donde puedes relajarte y disfrutar de un momento de paz. ¡Te invitamos a sentarte y disfrutar de lo que tenemos para ofrecerte!"
+                    </p>
+                    <div class="about__data-img">
+                        <img src="assets/img/cafe-acerca-de.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="rama-de-cafe-one">
+                <img src="assets/img/rama-de-cafe.png" alt="">
+            </div>
+        </section>
+
+        <!-- Menu -->
+        <section class="menu section" id="menu">
+            <h2 class="section__title">Menú</h2>
+
+            <div class="menu__container container grid">
+                <ul class="menu__filters">
+                    <li>
+                        <button class="menu__item active-menu" data-filter=".cafe">Todo</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".cafe">Café</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".te">Té</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".sanduche">Sanduche</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".donas">Donas</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".jugos">Jugos</button>
+                    </li>
+                    <li>
+                        <button class="menu__item" data-filter=".churros">Churros</button>
+                    </li>
+                </ul>
+    
+                <div class="menu__cards grid">
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/mocha.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Mocha</h3>
+                            <p class="menu__card-text">leche, salsa de chocolate, crema batida, chocolate relleno, shot de espresso</p>
+                        </div>
+                        <p class="menu__card-price">$30</p>
+                    </article>
+
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/macchiato.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Macchiato</h3>
+                            <p class="menu__card-text">leche o bebida vegetal, vainilla, caramelo, hielo, shot de espresso</p>
+                        </div>
+                        <p class="menu__card-price">$19</p>
+                    </article>
+
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/capuccino.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Capuccino</h3>
+                            <p class="menu__card-text">leche o bebida vegetal, canela o chocolate relleno, shot de espresso</p>
+                        </div>
+                        <p class="menu__card-price">$5</p>
+                    </article>
+
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/latte.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Latter</h3>
+                            <p class="menu__card-text">leche, hielo, shot de espresso</p>
+                        </div>
+                        <p class="menu__card-price">$18</p>
+                    </article>
+
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/americano.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Americano</h3>
+                            <p class="menu__card-text">agua caliente, shot de espresso</p>
+                        </div>
+                        <p class="menu__card-price">$3</p>
+                    </article>
+
+                    <article class="menu__card mix cafe">
+                        <img src="assets/img/espresso.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Espresso</h3>
+                            <p class="menu__card-text">100% café</p>
+                        </div>
+                        <p class="menu__card-price">$3</p>
+                    </article>
+
+                    <article class="menu__card mix sanduche">
+                        <img src="assets/img/sanduche-peque.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Sanduche Peque</h3>
+                            <p class="menu__card-text">Jamon, tajadas de pan, mantequilla, lechuga, queso</p>
+                        </div>
+                        <p class="menu__card-price">$2</p>
+                    </article>
+
+                    <article class="menu__card mix sanduche">
+                        <img src="assets/img/sanduche-gran.png" alt="" class="menu__card-img">
+                        <div class="menu__card-data">
+                            <h3 class="menu__card-title">Sanduche Gran</h3>
+                            <p class="menu__card-text">Jamon, tajadas de pan, mantequilla, lechuga, queso</p>
+                        </div>
+                        <p class="menu__card-price">$4</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="rama-de-cafe-two">
+                <img src="assets/img/rama-de-cafe.png" alt="">
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="gallery section" id="gallery">
+            <h2 class="section__title">Galería</h2>
+
+            <div class="gallery__container container grid">
+                <div class="gallery__img">
+                    <img src="assets/img/g1.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g2.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g3.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g4.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g5.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g6.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g7.jpg" alt="">
+                </div>
+                <div class="gallery__img">
+                    <img src="assets/img/g8.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Phrase -->
+        <section class="phrase section">
+            <div class="phrase__container container grid">
+                <p class="phrase_text">“La vida es como una taza de café. 
+                    <br> 
+                    Todo está en cómo la preparas, pero sobre todo en cómo la tomas.”</p>
+            </div>
+
+            <div class="rama-de-cafe-three">
+                <img src="assets/img/rama-de-cafe.png" alt="">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <!-- Subscribe -->
+            <form class="footer-sub__container">
+                <p class="footer-sub__text">Entérate de todas las promociones</p>
+                <div class="footer-sub__content">
+                    <input class="footer-sub__email" type="email" placeholder="Ingresa tu correo electrónico" name="subscribe_email" id="subscribe-email">
+                    <button class="footer-sub__button" type="submit">Suscríbete</button>
+                </div>
+            </form>
+
+            <div class="cafe-subscribe-img">
+                <img src="assets/img/cafe-subscribe.png" alt="">
+            </div>
+
+            <div class="footer__content grid">
+                <div>
+                    <a href="#" class="footer__logo">Cafeteria a tu Gusto</a>
+                    <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1677.4844992083126!2d-79.46897866684537!3d0.32784921954947693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sec!4v1677260841752!5m2!1ses!2sec" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="footer__nav">
+                    <p class="footer__title">Navegación</p>
+                    <ul class="footer__link">
+                        <li>
+                            <a href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#">Menú</a>
+                        </li>
+                        <li>
+                            <a href="#">Galería</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer__contact">
+                    <p class="footer__title">Contacto</p>
+                    <ul class="footer__link">
+                        <li>
+                            <a href="#" class="footer__item">
+                                <i class="ri-mail-fill footer__icon"></i>
+                                <span>caferteriaatugusto@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__item">
+                                <i class="ri-phone-fill footer__icon"></i>
+                                <span>(+593) 981627624</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__item">
+                                <i class="ri-map-pin-2-fill footer__icon"></i>
+                                <span>Barrio los Almendros, calle Benito Nieves</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+    
+                <div class="footer__social">
+                    <p class="footer__title">Redes Sociales</p>
+                    <ul class="footer__link--flex">
+                        <li>
+                            <a href="#">
+                                <i class="ri-facebook-box-fill footer__icon"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ri-instagram-fill footer__icon"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__info">
+                <span class="footer__copy">
+                    2022 Copyright &#169; Renso Bautista. Todos los derechos reservados.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!----------------| Scroll Up |--------------->
+    <a href="#" id="scroll-up" class="scrollup" aria-label="Subir al inicio de la pagina">
+        <i class="ri-arrow-up-s-line"></i>
+    </a>
+
+    <!----------------| Scrollreveal |--------------->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!----------------| Mixitup |--------------->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!----------------| Main |--------------->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
