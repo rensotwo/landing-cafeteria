@@ -8,6 +8,6 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 - Static page.
 
-Link: https://rensotwo.com/
+Link: https://landing-cafeteria-ashen.vercel.app/
 
 ![preview img](/preview.png)
